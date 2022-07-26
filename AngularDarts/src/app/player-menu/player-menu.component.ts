@@ -10,7 +10,7 @@ import { URL } from '../properties/url';
 })
 export class PlayerMenuComponent implements OnInit {
 
-  url = URL;
+  url = URL + '/players';
   players: Player[] = [];
 
   constructor(private http: HttpClient) { }

@@ -3,7 +3,7 @@
   <button (click)="onPlayerMenu()">Manage players</button>
 </div>
 
-<div *ngIf="showNewGame">Here goes app-new-game</div>
+<div *ngIf="showNewGame"><app-new-game></app-new-game></div>
 <div *ngIf="showPlayers">
   <app-player-menu></app-player-menu>
 </div>

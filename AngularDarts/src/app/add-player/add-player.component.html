@@ -1,0 +1,9 @@
+<head>
+    <link rel="stylesheet" href="./add-player.component.css">
+</head>
+
+<app-test-http></app-test-http>
+
+<label for="username">Username</label>
+<input id="username" type="text" class="validate" [(ngModel)]="username" placeholder="{{username}}">
+<button (click)="onConfirm()">confirm</button>

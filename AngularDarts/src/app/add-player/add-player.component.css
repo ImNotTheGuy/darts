@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+input::placeholder {
+    opacity: 0.5;
+    color: rgb(106, 97, 97);
+  }   
+  

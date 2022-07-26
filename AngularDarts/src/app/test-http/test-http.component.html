@@ -1,0 +1,8 @@
+<button *ngIf="showPlayerList" (click)="onClick()">Hide list of players</button>
+
+<button *ngIf="!showPlayerList" (click)="onClick()">Show list of players</button>
+
+<div *ngIf="showPlayerList">
+  <div *ngFor="let player of players">{{player.id}}: {{player.username}} <button (click)="onDelete( player.id )" (click)="onRefresh()">delete</button></div> 
+</div>
+

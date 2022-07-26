@@ -17,13 +17,13 @@ export class MainMenuComponent implements OnInit {
   }
 
   onPlayerMenu(): void {
-    this.showPlayers = false;
-    this.showNewGame = true;
+    this.showPlayers = true;
+    this.showNewGame = false;
   }
 
   onNewGame(): void {
-    this.showNewGame = false;
-    this.showPlayers = true;
+    this.showNewGame = true;
+    this.showPlayers = false;
     //TODO: route to new game meny
   }
 }

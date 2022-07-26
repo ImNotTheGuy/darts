@@ -1,1 +1,6 @@
-Player menu works !
+<div *ngFor="let player of players">
+    {{player.username}} ({{player.joinDate}}) 
+    <button (click)="onShowStatistics(player.id)">Statistics</button>
+    <button (click)="onModify(player.id)">Modify</button>
+    <button (click)="onDelete(player.id)">Delete</button>
+</div>

@@ -1,10 +1,9 @@
-
-
-<div *ngIf="show">
-    <button (click)="onNewGame()">New game</button>
-</div>
-<div *ngIf="show">
-    <button (click)="onPlayerMenu()">Manage players</button>
+<div>
+  <button (click)="onNewGame()">New game</button>
+  <button (click)="onPlayerMenu()">Manage players</button>
 </div>
 
-<router-outlet></router-outlet>
+<div *ngIf="showNewGame">Here goes app-new-game</div>
+<div *ngIf="showPlayers">
+  <app-player-menu></app-player-menu>
+</div>

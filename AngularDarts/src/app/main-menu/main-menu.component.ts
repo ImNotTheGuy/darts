@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-menu',
@@ -7,23 +6,24 @@ import { Router } from '@angular/router';
   styleUrls: ['./main-menu.component.css'],
 })
 export class MainMenuComponent implements OnInit {
-  show = true;
+  showPlayers = false;
+  showNewGame = false;
 
-  constructor(private router: Router) {
-    this.show = true;
+  constructor() {
   }
 
   ngOnInit(): void {
-    this.show = true;
+    
   }
 
   onPlayerMenu(): void {
-    this.show = false;
-    this.router.navigateByUrl('/players');
+    this.showPlayers = true;
+    this.showNewGame = false;
   }
 
   onNewGame(): void {
-    this.show = false;
+    this.showNewGame = true;
+    this.showPlayers = false;
     //TODO: route to new game meny
   }
 }

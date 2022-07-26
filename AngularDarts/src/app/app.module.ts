@@ -8,6 +8,7 @@ import { AddPlayerComponent } from './add-player/add-player.component';
 import { FormsModule } from '@angular/forms';
 import { PlayerMenuComponent } from './player-menu/player-menu.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
+import { NewGameComponent } from './new-game/new-game.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
     AddPlayerComponent,
     PlayerMenuComponent,
     MainMenuComponent,
+    NewGameComponent,
   ],
   imports: [
     BrowserModule,
